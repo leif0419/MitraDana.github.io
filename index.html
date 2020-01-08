@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><script src=https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js></script><script src=https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js></script><script src=https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js></script><script>function getUrlKey(name) {
+      return (
+        decodeURIComponent(
+          (new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(
+            location.href
+          ) || [, ''])[1].replace(/\+/g, '%20')
+        ) || null
+      );
+    }
+    firebase.initializeApp(JSON.parse(getUrlKey('firebaseConfig')));
+    firebase.auth().languageCode = 'id';</script><title></title><link href=./static/css/app.b7cb28fefa44201d19c19d7af1c76bf4.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.e4181c2d2e439bb2274c.js></script><script type=text/javascript src=./static/js/app.42b6afdb49aab6ec21b3.js></script></body></html>
